@@ -1,0 +1,10 @@
+# MLOps sessions — core Python packages (tested with Python 3.11 / 3.12)
+mlflow>=3.0,<4
+dvc>=3.50,<4
+evidently>=0.7,<0.8
+scikit-learn>=1.5
+pandas>=2.2
+fastapi>=0.110
+uvicorn[standard]>=0.29
+prometheus-client>=0.20
+requests>=2.31

@@ -1,0 +1,11 @@
+# Local Kubernetes cluster for the MLOps sessions
+#   kind create cluster --name mlops --config kind-config.yaml
+# NodePort 30080 inside the cluster is reachable at http://localhost:8080
+kind: Cluster
+apiVersion: kind.x-k8s.io/v1alpha4
+nodes:
+  - role: control-plane
+    extraPortMappings:
+      - containerPort: 30080
+        hostPort: 8080
+        protocol: TCP
